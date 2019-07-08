@@ -1,7 +1,6 @@
-# import numpy as np
-
-# print(np.pi)
-
-import visa
-rm = visa.ResourceManager()
+#pyvisaしか入っていないので、それをvisaと直すのを忘れない。
+import pyvisa as visa
+rm = visa.ResourceManager('@py')
 print(rm.list_resources())
+
+print(rm)
